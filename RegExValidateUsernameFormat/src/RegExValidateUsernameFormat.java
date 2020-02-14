@@ -1,0 +1,14 @@
+import java.util.Scanner;
+
+public class RegExValidateUsernameFormat {
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in);
+		System.out.print("Enter username: ");
+		String username = input.nextLine();
+		if (username.matches("(a)[0-9]{7}(@haaga-helia.fi)")) {
+			System.out.println("OK");
+		} else
+			System.out.println("Invalid username format");
+		input.close();
+	}
+}
